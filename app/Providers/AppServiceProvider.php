@@ -26,8 +26,8 @@ class AppServiceProvider extends ServiceProvider
     {
         View::share('date', date('Y'));
 
-        View::composer('user*', function($view){
-            $view->with('balance', 1234);
+        View::composer('user*', function ($view) {
+            $view->with('balance', 12345);
         });
     }
 }

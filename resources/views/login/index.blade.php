@@ -1,11 +1,7 @@
-@extends('layouts.base')
+@extends('layouts.auth')
 
-@section('page.title')
-    Страница входа
+@section('page.title', 'Страница входа')
+
+@section('auth.content')
+    <x-login.card />
 @endsection
-
-@section('content')
-    <h1> Вход </h1>
-@endsection
-
-
